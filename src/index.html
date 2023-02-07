@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-transparent">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="output.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junction</title>
+    <script type="module" src="/main.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </head>
+
+  <body class="font-sans bg-transparent dark:text-white h-screen w-screen overflow-hidden select-none">
+    <div class="flex overflow-y-hidden overflow-x-visible">
+      <!--side bar-->
+      <div class="flex flex-col w-60 h-screen bg-opacity-60 bg-white dark:bg-black dark:text-white dark:bg-opacity-60">
+        <!--navigator-->
+        <div class="h-full w-full">
+          <div class="text-4xl h-14 w-24 px-6 my-2 flex items-center space-x-1">
+            <iconify-icon icon="ri:youtube-fill"></iconify-icon>
+            <h1 class="font-yt-b text-xl">UniTube</h1>
+          </div>
+          <div class="group flex items-center space-x-1 rounded-md bg-white dark:bg-gray-900 transition px-4 py-2 m-2 text-xl">
+              <iconify-icon icon="ic:round-search"></iconify-icon> 
+              <input type="text" placeholder="Search" class="text-base bg-transparent text-black dark:text-white w-20 group-hover:w-80 outline-none transition-all duration-1000"></p>
+          </div>
+          <div class="space-y-1"> 
+            <div class="active flex items-center space-x-1 rounded-md hover:bg-gray-300 dark:hover:bg-black transition px-4 py-2 m-2 text-xl">
+              <iconify-icon icon="material-symbols:subscriptions"></iconify-icon> 
+              <p class="text-base">Subscription</p>
+            </div>
+            <div class="flex items-center space-x-1 rounded-md hover:bg-gray-300 dark:hover:bg-black transition px-4 py-2 m-2 text-xl">
+              <iconify-icon icon="material-symbols:dynamic-feed"></iconify-icon>
+              <p class="text-base">Feed</p>
+            </div>
+            <div class="flex items-center space-x-1 rounded-md hover:bg-gray-300 dark:hover:bg-black transition px-4 py-2 m-2 text-xl">
+              <iconify-icon icon="ic:round-trending-up"></iconify-icon>
+              <p class="text-base">Trending</p>
+            </div>
+          </div>
+        </div>
+        <!--user/profile--> 
+        <div class="h-20 w-full border-t-2 border-white dark:border-neutral-800 flex">
+          <div class="px-6 my-2 text-2xl flex items-center space-x-2">
+            <iconify-icon icon="ri:user-line"></iconify-icon>
+            <div class="text-base">User</div>
+          </div>
+        </div>
+      </div>
+      <!--body-->
+      <div class="w-full h-screen bg-white dark:bg-black overflow-scroll">
+        <!--top bar (MOVED)-->
+        <div class="hidden top-0 w-full h-14 p-2 border-b-2 bg-white dark:bg-black dark:border-neutral-900 sticky">
+          <div class="flex items-center align-middle m-auto w-4/5 max-w-4xl h-full bg-transparent rounded-lg text-2xl">
+            <iconify-icon class="text-neutral-500" icon="ic:round-search"></iconify-icon>
+            <input type="text" title="Search" class="w-full h-full p-2 text-base bg-white dark:bg-black text-black dark:text-white outline-none">
+          </div>
+        </div>
+        <!--content placeholder-->
+        <div class="w-full p-4">
+          <div class="font-yt-b text-3xl m-2">Feed</div>
+          <div class="h-full w-full flex flex-wrap content-start"> 
+            <div class="basis-60 grow shrink h-auto rounded-lg m-2">
+              <!--cover-->
+              <div class="w-full aspect-video bg-neutral-300 dark:bg-neutral-800 bg-[url('./assets/example-vid.webp')] bg-cover overflow-hidden rounded-lg">
+              </div>
+              <!--desc-->
+              <div class="w-full h-auto px-4 py-2">
+                <div class="w-full">
+                  <div class="max-h-14 overflow-hidden text-ellipsis whitespace-normal font-yt-b text-lg white">Video Title</div>
+                  <div class="w-full my-1">
+                    <div class="w-full flex items-center">
+                      <div class="w-full max-h-12 text-neutral-400 overflow-hidden text-ellipsis">Linus Tech Tips</div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-neutral-400">2023/1/1</div>
+
+                      <div class="mx-2 w-0.5 h-5 rounded-full bg-neutral-500"></div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="carbon:view"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined" class="rotate-180"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+<div class="basis-60 grow shrink h-auto rounded-lg m-2">
+              <!--cover-->
+              <div class="w-full aspect-video bg-neutral-300 dark:bg-neutral-800 bg-[url('./assets/example-vid.webp')] bg-cover overflow-hidden rounded-lg">
+              </div>
+              <!--desc-->
+              <div class="w-full h-auto px-4 py-2">
+                <div class="w-full">
+                  <div class="max-h-14 overflow-hidden text-ellipsis whitespace-normal font-yt-b text-lg white">Video Title</div>
+                  <div class="w-full my-1">
+                    <div class="w-full flex items-center">
+                      <div class="w-full max-h-12 text-neutral-400 overflow-hidden text-ellipsis">Linus Tech Tips</div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-neutral-400">2023/1/1</div>
+
+                      <div class="mx-2 w-0.5 h-5 rounded-full bg-neutral-500"></div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="carbon:view"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined" class="rotate-180"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+<div class="basis-60 grow shrink h-auto rounded-lg m-2">
+              <!--cover-->
+              <div class="w-full aspect-video bg-neutral-300 dark:bg-neutral-800 bg-[url('./assets/example-vid.webp')] bg-cover overflow-hidden rounded-lg">
+              </div>
+              <!--desc-->
+              <div class="w-full h-auto px-4 py-2">
+                <div class="w-full">
+                  <div class="max-h-14 overflow-hidden text-ellipsis whitespace-normal font-yt-b text-lg white">Video Title</div>
+                  <div class="w-full my-1">
+                    <div class="w-full flex items-center">
+                      <div class="w-full max-h-12 text-neutral-400 overflow-hidden text-ellipsis">Linus Tech Tips</div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-neutral-400">2023/1/1</div>
+
+                      <div class="mx-2 w-0.5 h-5 rounded-full bg-neutral-500"></div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="carbon:view"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined" class="rotate-180"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+<div class="basis-60 grow shrink h-auto rounded-lg m-2">
+              <!--cover-->
+              <div class="w-full aspect-video bg-neutral-300 dark:bg-neutral-800 bg-[url('./assets/example-vid.webp')] bg-cover overflow-hidden rounded-lg">
+              </div>
+              <!--desc-->
+              <div class="w-full h-auto px-4 py-2">
+                <div class="w-full">
+                  <div class="max-h-14 overflow-hidden text-ellipsis whitespace-normal font-yt-b text-lg white">Video Title</div>
+                  <div class="w-full my-1">
+                    <div class="w-full flex items-center">
+                      <div class="w-full max-h-12 text-neutral-400 overflow-hidden text-ellipsis">Linus Tech Tips</div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-neutral-400">2023/1/1</div>
+
+                      <div class="mx-2 w-0.5 h-5 rounded-full bg-neutral-500"></div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="carbon:view"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined" class="rotate-180"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+<div class="basis-60 grow shrink h-auto rounded-lg m-2">
+              <!--cover-->
+              <div class="w-full aspect-video bg-neutral-300 dark:bg-neutral-800 bg-[url('./assets/example-vid.webp')] bg-cover overflow-hidden rounded-lg">
+              </div>
+              <!--desc-->
+              <div class="w-full h-auto px-4 py-2">
+                <div class="w-full">
+                  <div class="max-h-14 overflow-hidden text-ellipsis whitespace-normal font-yt-b text-lg white">Video Title</div>
+                  <div class="w-full my-1">
+                    <div class="w-full flex items-center">
+                      <div class="w-full max-h-12 text-neutral-400 overflow-hidden text-ellipsis">Linus Tech Tips</div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-neutral-400">2023/1/1</div>
+
+                      <div class="mx-2 w-0.5 h-5 rounded-full bg-neutral-500"></div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="carbon:view"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined" class="rotate-180"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+<div class="basis-60 grow shrink h-auto rounded-lg m-2">
+              <!--cover-->
+              <div class="w-full aspect-video bg-neutral-300 dark:bg-neutral-800 bg-[url('./assets/example-vid.webp')] bg-cover overflow-hidden rounded-lg">
+              </div>
+              <!--desc-->
+              <div class="w-full h-auto px-4 py-2">
+                <div class="w-full">
+                  <div class="max-h-14 overflow-hidden text-ellipsis whitespace-normal font-yt-b text-lg white">Video Title</div>
+                  <div class="w-full my-1">
+                    <div class="w-full flex items-center">
+                      <div class="w-full max-h-12 text-neutral-400 overflow-hidden text-ellipsis">Linus Tech Tips</div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-neutral-400">2023/1/1</div>
+
+                      <div class="mx-2 w-0.5 h-5 rounded-full bg-neutral-500"></div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="carbon:view"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined" class="rotate-180"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+<div class="basis-60 grow shrink h-auto rounded-lg m-2">
+              <!--cover-->
+              <div class="w-full aspect-video bg-neutral-300 dark:bg-neutral-800 bg-[url('./assets/example-vid.webp')] bg-cover overflow-hidden rounded-lg">
+              </div>
+              <!--desc-->
+              <div class="w-full h-auto px-4 py-2">
+                <div class="w-full">
+                  <div class="max-h-14 overflow-hidden text-ellipsis whitespace-normal font-yt-b text-lg white">Video Title</div>
+                  <div class="w-full my-1">
+                    <div class="w-full flex items-center">
+                      <div class="w-full max-h-12 text-neutral-400 overflow-hidden text-ellipsis">Linus Tech Tips</div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-neutral-400">2023/1/1</div>
+
+                      <div class="mx-2 w-0.5 h-5 rounded-full bg-neutral-500"></div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="carbon:view"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined" class="rotate-180"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+<div class="basis-60 grow shrink h-auto rounded-lg m-2">
+              <!--cover-->
+              <div class="w-full aspect-video bg-neutral-300 dark:bg-neutral-800 bg-[url('./assets/example-vid.webp')] bg-cover overflow-hidden rounded-lg">
+              </div>
+              <!--desc-->
+              <div class="w-full h-auto px-4 py-2">
+                <div class="w-full">
+                  <div class="max-h-14 overflow-hidden text-ellipsis whitespace-normal font-yt-b text-lg white">Video Title</div>
+                  <div class="w-full my-1">
+                    <div class="w-full flex items-center">
+                      <div class="w-full max-h-12 text-neutral-400 overflow-hidden text-ellipsis">Linus Tech Tips</div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-neutral-400">2023/1/1</div>
+
+                      <div class="mx-2 w-0.5 h-5 rounded-full bg-neutral-500"></div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="carbon:view"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                      <div class="flex items-center mx-1 space-x-1">
+                        <iconify-icon icon="ant-design:like-outlined" class="rotate-180"></iconify-icon>
+                        <div class="text-neutral-400">0</div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
